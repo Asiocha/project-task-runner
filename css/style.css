@@ -1,10 +1,104 @@
-navigation {
+/* Global */
+*, *::before, *::after {
+  box-sizing: border-box; }
+body {
   margin: 0;
   text-align: center;
-  font-family: cardo;
-  font-size: 16px;
-}
-.portfolio {
+  background-color: #ffff;
+  }
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 20px; }
+
+.splash {
+  height: 100vh;
+  position: relative;
+  background-image: url(https://images.pexels.com/photos/1056553/pexels-photo-1056553.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+ }
+ .splash-inner {
+   color: #ffffff;
+   position: absolute;
+   width: 100%;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   font-style: normal;
+   text-transform: uppercase;
+ }
+ .splash-inner h1 {
+   font-family: "Times New Roman";
+   text-align: center;
+   font-style: italic;
+ }
+ .splash-inner h2 {
+   font-size: 50px;
+   font-family: arial;
+ }
+ .splash-inner a {
+   display: inline-block;
+   background-color: #ffa500;
+   text-decoration: none;
+   padding: 20px;
+   font-weight: bold;
+   color: #ffffff;
+ }
+nav {
   width: 100%;
-  height: 300px;
-  object-fit: cover; }
+  height: 100px;
+}
+.navigation ul li {
+  display: inline-block;
+  list-style: none;
+  float: left;
+  line-height: 100px;
+}
+.navigation ul li a {
+  text-decoration: none;
+  font-size: 14px;
+  font-family: arial;
+  color: #000;
+  padding: 0 20px;
+}
+.navigation ul li a:hover {
+  color: #0000ff;
+}
+.services h1{
+  font-size: 50px;
+  font-family: arial;
+}
+.fas {
+  color: #f2e66a;
+  font-size: 28px;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  line-height: 90px;
+  border: solid 3px #f2e66a;
+  position: relative;
+}
+.footer li {
+  text-decoration: none;
+  display: flex;
+  list-style: none;
+}
+.footer ul li {
+  display: inline-block;
+}
+.footer a {
+  background-color: black;
+}
+.footer fab {
+  background-color: black;
+  line-height: 50px;
+  margin: 20px 5px;
+  color: #fff;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 30px;
+  text-align: center;
+}
